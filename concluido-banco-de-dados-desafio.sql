@@ -76,14 +76,16 @@ SELECT PRIMEIRONOME,
 
 -- Buscar o nome do filme e o gênero
 
-SELECT F.NOME, G.GENERO 
+SELECT F.NOME, 
+       G.GENERO 
   FROM FILMES F
   INNER JOIN GENEROS G ON G.ID = F.ID
 
 
 -- Buscar o nome do filme e o gênero do tipo "Mistério"
 
-SELECT F.NOME, G.GENERO 
+SELECT F.NOME, 
+       G.GENERO 
   FROM FILMES F
  INNER JOIN GENEROS G ON G.ID = F.ID
  WHERE G.GENERO = 'Mistério'
